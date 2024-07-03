@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        #btn{
+            color : red;
+        }
+    </style>
+  </head>
+  <body>
+    <input  type="Button" value="확인" id="btn" />
+    <script>
+        function pro(){
+            alert("눌렀습니다.");
+        }
+        var a = document.getElementById('btn');
+        a.onclick = function( e){alert('Hello World');
+        let b = 1    
+        a.innerHTML = a.innerHTML +b;
+        console.log(a.value);
+        a.value = a.value + b; 
+
+        }
+    </script>
+  </body>
+</html>
